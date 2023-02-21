@@ -13,12 +13,18 @@ body {
   color: black;
 }
 
-.false {
+.eseguito {
   text-decoration: line-through;
-  /* color: lightgray; */
+  color: lightgray;
   font-weight: lighter;
+  background-color: rgb(180, 121, 121);
 }
 
 li {
   display: pointer;
+}
+.fa-solid.fa-trash-can {
+  background-color: aliceblue;
+  padding: 25px;
+  color: red !important;
 }

@@ -59,17 +59,22 @@ createApp({
       toDo: toDo,
     };
   },
-    methodds: {
-        done() {
-            if (this.toDo.done === false) {
-                let done = this.toDo.done
-                done = true;
-            } else if (this.toDo.done === true) {
-                done = false;
-            },
-        }
-    }
+  methods: {
+    done(index) {
+      if (this.toDo[index].done === false) {
+        this.toDo[index].done = true;
+      } else if (this.toDo[index].done === true) {
+        this.toDo[index].done = false;
+      }
+    },
+    // fine methods
+  },
 }).mount("#app");
 //---------------------------------------------------------------------------
 // |||||||||||||||||||||||||||| VUE ||||||||||||||||||||||||||||
 //---------------------------------------------------------------------------
+
+// methods: {
+
+//     // fine methods
+// },
