@@ -67,6 +67,14 @@ createApp({
         this.toDo[index].done = false;
       }
     },
+    removeTask(index) {
+      this.toDo.splice(index, 1);
+      if (this.toDo[index].done === false) {
+        this.toDo[index].done = true;
+      } else if (this.toDo[index].done === true) {
+        this.toDo[index].done = false;
+      }
+    },
     // fine methods
   },
 }).mount("#app");
