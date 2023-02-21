@@ -21,10 +21,20 @@ body {
 }
 
 li {
-  display: pointer;
+  display: pointer !important;
 }
 .fa-solid.fa-trash-can {
   background-color: aliceblue;
   padding: 25px;
   color: red !important;
+}
+
+#basic-addon2 {
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+}
+
+#input-task {
+  background-color: aquamarine;
 }

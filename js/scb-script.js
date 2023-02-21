@@ -57,24 +57,30 @@ createApp({
     return {
       message: "cianuro's to do list",
       toDo: toDo,
+      inputTask: "",
     };
   },
   methods: {
     done(index) {
       if (this.toDo[index].done === false) {
         this.toDo[index].done = true;
-      } else if (this.toDo[index].done === true) {
-        this.toDo[index].done = false;
       }
+      //  else if (this.toDo[index].done === true) {
+      //     this.toDo[index].done = false;
+      //   }
     },
-    removeTask(index) {
+    rimuoviTask(index) {
       this.toDo.splice(index, 1);
       if (this.toDo[index].done === false) {
         this.toDo[index].done = true;
-      } else if (this.toDo[index].done === true) {
-        this.toDo[index].done = false;
       }
+      //   else if (this.toDo[index].done === true) {
+      //       this.toDo[index].done = false;
+      //     }
     },
+    //     aggiungiTask() {},
+    //       const nuovoTask = this.inputTask;
+    //   this.toDo.push(nuovoTask);
     // fine methods
   },
 }).mount("#app");
