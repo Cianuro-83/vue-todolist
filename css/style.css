@@ -12,3 +12,13 @@ body {
 .scb-list-item {
   color: black;
 }
+
+.false {
+  text-decoration: line-through;
+  /* color: lightgray; */
+  font-weight: lighter;
+}
+
+li {
+  display: pointer;
+}

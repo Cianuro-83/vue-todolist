@@ -41,7 +41,7 @@ let toDo = [
     done: false,
   },
   {
-    text: "Aggiornare il mac e gli iDevice all'ultima relaise del SO",
+    text: "Aggiornare il mac e gli iDevice all'ultima relaise dell'OS",
     done: false,
   },
 ];
@@ -59,6 +59,16 @@ createApp({
       toDo: toDo,
     };
   },
+    methodds: {
+        done() {
+            if (this.toDo.done === false) {
+                let done = this.toDo.done
+                done = true;
+            } else if (this.toDo.done === true) {
+                done = false;
+            },
+        }
+    }
 }).mount("#app");
 //---------------------------------------------------------------------------
 // |||||||||||||||||||||||||||| VUE ||||||||||||||||||||||||||||
