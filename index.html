@@ -20,7 +20,16 @@
 
 <body>
     <!-- VUE CONTAINER -->
-    <div id="app">{{ message }}
+    <div id="app">
+        <div class="container py-5">
+            <h1 class="text-bg-info fw-bolder fs-35 text-capitalize text-center text-danger">{{message}}</h1>
+            <div>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item list-group-item-warning scb-list-item" v-for="(lista,index) in toDo">
+                        {{lista.text}}</li>
+                </ol>
+            </div>
+        </div>
         <!-- FINE VUE CONTAINER -->
     </div>
 
