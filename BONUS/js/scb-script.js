@@ -76,9 +76,16 @@ createApp({
         this.toDo[index].done = false;
       }
     },
-    //     aggiungiTask() {},
-    //       const nuovoTask = this.inputTask;
-    //   this.toDo.push(nuovoTask);
+    aggiungiTask() {
+      const nuovoTask = this.inputTask;
+      const nuovaAttivita = {
+        text: "",
+        done: false,
+      };
+      nuovaAttivita.text = nuovoTask;
+      this.toDo.push(nuovaAttivita);
+      this.inputTask = "";
+    },
     // fine methods
   },
 }).mount("#app");
